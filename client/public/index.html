@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="imagens/logosite.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Oásis Tv a Webtv, para abençoar você!"/>
+    <meta name="keywords" content="oásistv, oasiswebtv, ibs, igreja batista semear, cultos de domingo, cultos igreja, igreja de deus, igreja batista"/>
+    <meta name="author" content="Roger Max"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="chat.css" />
+    <link rel="stylesheet" href="videos.css" />
+    <link rel="apple-touch-icon" href="imagens/logosite.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Oásis WebTv</title>
+  </head>
+  <body>
+     <script></script>
+
+    <header class="cabecalho">
+      <a class="logo" href="/">Oásis WebTv</a>
+      <a href="index.html"><img class="logo-oasis" src="imagens/logosite.png"></a>
+      <nav class="cabecalho-menu">
+          <a class="cabecalho-menu-item" href="index.html">Início</a>
+          <a class="cabecalho-menu-item" href="contato.html">Contato</a>
+      </nav>
+  </header>
+
+
+  <main class="main">
+      <center>
+
+        <div class="anuncio">
+          <a href="contato.html"><img src="imagens/anuncie.png" width="80%" style="margin-top:7%;" alt="anuncie" class="anuncie"></a>
+        </div>
+        <br><br>
+        <div class="share-button">
+          <span><i class="fas fa-share-alt"></i>Compartilhe</span>
+          <a href="https://facebook.com/sharer/sharer.php?u=https://www.oasistv.com.br/"><i id="face" class="fab fa-facebook-f"></i></a>
+          <!-- <a href="https://api.instagram.com/send?text=https://playerv.samcast.com.br/video/oasistv/1/true/false/c3RtdjUuc2FtY2FzdC5jb20uYnIrMQ==/16:9//nao/sim"><i  id="insta" class="fab fa-instagram"></i></a> -->
+          <a href="https://api.whatsapp.com/send?text=https://www.oasistv.com.br/"><i  id="what" class="fab fa-whatsapp"></i></a>
+        </div>
+        
+        
+
+        <div>
+          <iframe class="iframe-container" src="https://playerv.samcast.com.br/video/oasistv/1/true/false/c3RtdjUuc2FtY2FzdC5jb20uYnIrMQ==/16:9//nao/sim" scrolling="no" frameborder="0" allowfullscreen></iframe>
+       </div> 
+       <br><br>
+       <div id="root"></div>
+       <br><br>
+
+      <br><br>
+      <br>
+      <!-- <h2 class="cultos">Últimas Transmissões</h2>
+       <div class="videos-cultos">
+        <iframe class="video-culto"
+          src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UUZT1Izvv56HLtjpiPySc1XQ" allowfullscreen>
+        </iframe>
+        <a href="videos.html"><button id="botao"><p>Ver mais</p></button></a>
+       </div> -->
+      <!-- <marquee><div id="quote-box"></marquee>
+      </div>
+     <button id="loadQuote">Mostrar frase</button>
+      </div> -->
+     <!-- </div>  -->
+     <script src="versiculo.js"></script>
+      </center>
+
+    </main>
+
+    <footer>
+      <a class="logo" href="/">Oásis WEBTV<br><p class="copyright">Copyright (c)2022 <br> Oásis WEBTV</p></a>
+      <a href="https://www.instagram.com/ibs.semear/"><a href="https://www.instagram.com/ibs.semear/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.instagram.com/ibs.semear/"><a href="https://m.facebook.com/igsemear"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/ibs.semear/"><a href="https://www.youtube.com/channel/UCZT1Izvv56HLtjpiPySc1XQ"><i class="fab fa-youtube"></i></a>
+      <a href="index.html"><img class="logo-oasis"  src="imagens/logosite.png"></a>
+    </footer>
+    <div class="row">
+      <p id="pad">Essa página já foi visitada:</p>
+      <h1 id="count">0</h1>
+      <p id="pad">vezes</p>
+    <script type="text/javascript" src="contador.js"></script>
+    </div>
+  </body>
+</html>
