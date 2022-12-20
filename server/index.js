@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
-const http = require("http");
+const https = require("https");
 const cors = require("cors");
 const { Server } = require("socket.io");
-app.use(cors({ origin: "http://177.153.51.103:3000" }));
+app.use(cors({ origin: "https://177.153.51.103:3000" }));
 
-const server = http.createServer(app);
+const server = https.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "http://177.153.51.103:3000",
+    origin: "https://177.153.51.103:3000",
     methods: ["GET", "POST"],
   },
 });
