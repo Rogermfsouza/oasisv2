@@ -9,7 +9,7 @@ const server = https.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://www.oasistv.com.br:3000",
+    origin: "https://www.oasistv.com.br",
     methods: ["GET", "POST"],
   },
 });
