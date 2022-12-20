@@ -9,7 +9,7 @@ const server = https.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://www.oasistv.com.br",
+    origin: "https://www.oasistv.com.br:3000",
     methods: ["GET", "POST"],
   },
 });
@@ -33,5 +33,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(3001, () => {
-  console.log("SERVER RUNNING HTTPS");
+  console.log("SERVER RUNNING HTTPS portas");
 });
