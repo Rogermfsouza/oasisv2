@@ -3,7 +3,10 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("https://177.153.51.103:3001"); //https://www.oasistv.com.br/
+const socket = io.connect("https://177.153.51.103:3001", {
+  transports: ['websocket'],
+  upgrade: false
+});
 
 console.log("Client RUNNING OK");
 

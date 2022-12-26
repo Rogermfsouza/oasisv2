@@ -25,10 +25,9 @@ function Chat({ socket, username, room }) {
 
 useEffect(() => {
     socket.off("receive_message").on("receive_message", (data) => {
-
       setMessageList((list) => [...list, data]);
-    });
-  }, [socket]);
+    }); 
+}, [socket]);
 
   return (
     <div className="chat-window">
