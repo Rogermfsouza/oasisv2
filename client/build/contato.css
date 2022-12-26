@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body{
+    background-color: #01325f;
+}
+
+.arru{
+    margin-bottom: -83px;
+}
+  
+p{
+    color: aliceblue;
+    font-size: 21px;
+}
+  
+h1,
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 1.2;
+}
+  
+h1::before {
+    display: block;
+}
+  
+h2::before {
+    display: block;
+}
+  
+.form {
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+  
+.form label,
+.form input,
+.form textarea,
+.form button {
+    display: block;
+    width: 75%;
+    height: 80px;
+}
+  
+.form label {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+  
+.form input,
+.form textarea {
+    font: inherit;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+  
+.form textarea {
+    margin: -9px;
+    min-height: 13rem;
+    resize: vertical;
+}
+  
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus {
+    outline: none;
+    border-color: #09d;
+    box-shadow: 0 0 0 3px #4dc8ff;
+}
+  
+.form button {
+    display: block;
+    background: #0072c4;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+  
+.form button:hover,
+.form button:focus {
+    outline: none;
+    background: #09d;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+a:hover {
+    opacity: 0.7;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    background: #217cd1;
+    /* height: 100%; */
+}
+
+.cabecalho-menu-item{
+    margin: 10px;
+}
+
+.logo-oasis{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #217cd1;
+    height: 10vh;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.iframe-container{
+    margin-top: 50px;
+    width: 85%;
+    height: 700px;
+} 
+
+.copyright{
+    font-size: 12px;
+}
+
+
+.anuncio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.anuncie{
+    margin-top: 4%;
+    width: 35%;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    background: #217cd1;
+}
+
+
+@media (max-width: 999px) {
+
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    
+    body{
+        background-color: #01325f;
+    }
+    
+    a {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+      
+    a:hover {
+        opacity: 0.7;
+    }
+    
+    .cabecalho{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        background: #217cd1;
+        /* height: 100%; */
+    }
+    
+    .cabecalho-menu-item{
+        margin: 8px;
+    }
+    
+    .logo-oasis{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        background: #217cd1;
+        height: 8vh;
+    }
+    
+    .logo {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    .iframe-container{
+        margin-top: 50px;
+        width: 85%;
+        height: 500px;
+    } 
+    
+    .copyright{
+        font-size: 6px;
+    }
+    
+    .anuncio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .anuncie{
+        margin-top: 12%;
+        width: 80%;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        background: #217cd1;
+    }    
+
+}
+
+@keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
