@@ -10,9 +10,6 @@ body{
     background: #217cd1;
 }
 
-main {
-  height: 100vh;
-}
 
 nav {
     display: flex;

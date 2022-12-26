@@ -51,6 +51,7 @@
 }
 
 .chat-window {
+  margin-top: 30px;
   width: 60%;
   height: 420px;
 }
