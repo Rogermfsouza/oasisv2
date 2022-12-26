@@ -3,13 +3,13 @@ const app = express();
 const https = require("https");
 const cors = require("cors");
 const { Server } = require("socket.io");
-app.use(cors({ origin: ["https://www.oasistv.com.br", "https://177.153.51.103"] }));
+app.use(cors({ origin: ["https://www.oasistv.com.br", "https://177.153.51.103", "https://177.153.51.103:3000"] }));
 
 const server = https.createServer(app);
 
 const io = new Server(server, {
   cors: {
-  origin: ["https://www.oasistv.com.br", "https://177.153.51.103"],
+  origin: ["https://www.oasistv.com.br", "https://177.153.51.103", "https://177.153.51.103:3000" ],
   methods: ["GET", "POST"],
   },
 });
