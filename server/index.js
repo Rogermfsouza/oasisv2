@@ -1,18 +1,11 @@
 const express = require("express");
 const app = express();
 const https = require("https");
-const cors = require("cors");
 const { Server } = require("socket.io");
-app.use(cors({ origin: ["https://www.oasistv.com.br", "https://177.153.51.103", "https://177.153.51.103:3000"] }));
 
 const server = https.createServer(app);
 
-const io = new Server(server, {
-  cors: {
-  origin: ["https://www.oasistv.com.br", "https://177.153.51.103", "https://177.153.51.103:3000" ],
-  methods: ["GET", "POST"],
-  },
-});
+const io = new Server(server);
 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
@@ -32,5 +25,5 @@ io.on("connection", (socket) => {
 });
 
 server.listen(3001, () => {
-  console.log("SERVER RUNNING 3001 OK");
+  console.log("SERVER RUNNING 3001");
 });

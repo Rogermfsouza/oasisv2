@@ -5,7 +5,7 @@ import Chat from "./Chat";
 
 const socket = io.connect("https://177.153.51.103:3001");
 
-console.log("Client RUNNING OK");
+console.log("Client RUNNING OK!!");
 
 function App() {
   const [username, setUsername] = useState("");
@@ -17,9 +17,9 @@ function App() {
       socket.emit("join_room", room);
       setShowChat(true);
     }
-};
+  };
 
-return (
+  return (
     <div className="App">
       {!showChat ? (
         <div className="joinChatContainer">
