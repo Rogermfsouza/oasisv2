@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useState } from "react";
 import Chat from "./Chat";
 
-const socket = io.connect("https://177.153.51.103:3001");
+const socket = io.connect("https://www.oasistv.com.br:3001");
 
 console.log("Client RUNNING OK!!");
 
