@@ -4,8 +4,10 @@ const https = require("https");
 const fs = require("fs");
 const cors = require("cors");
 const { Server } = require("socket.io");
-app.use(cors({ origin: "https://177.153.51.103:3000" }));
-
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "https://www.oasistv.com.br");
+  next();
+});
 
 const server = https.createServer({
   key: fs.readFileSync("/etc/letsencrypt/live/oasistv.com.br/privkey.pem"),
@@ -15,10 +17,11 @@ const server = https.createServer({
 
 const io = new Server(server, {
   cors: {
-    origin: "https://177.153.51.103:3000",
+    origin: "https://www.oasistv.com.br",
     methods: ["GET", "POST"],
   },
 });
+
 
 io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`);
